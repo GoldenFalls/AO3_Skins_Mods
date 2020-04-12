@@ -4,24 +4,30 @@
 
 .tagset ol.tags li:not(.listbox) {
   background: rgba(232, 232, 232, .5);
-  border-bottom: none;
   padding-left: 3px;
   padding-right: 3px;
   margin-right: 0.1em;
   border-radius: 1px;
   line-height: 1.5em;
   box-sizing: border-box;
+  /* OPTIONAL: each tag gets its own line */
+  display: block;
 }
 
 .tagset ol.tags li:not(.listbox):nth-of-type(2n) {
   background: rgba(180, 180, 180, .5);
 }
 
-.tagset ol.tags li:not(.listbox):hover, .tagset ol.tags li:not(.listbox):focus {
+
+/* OPTIONAL: hover state
+Tags in tagsets are not links, so giving them a hover state is a tad deceptive.
+So only include a hover state if you think it will help you keep track of where you are when going through a large tagset.*/
+
+.tagset ol.tags li:not(.listbox):hover {
   background: rgba(214, 214, 214, .6);
   color: #000;
 }
 
-.tagset ol.tags li:not(.listbox):nth-of-type(2n):hover, .tagset ol.tags li:not(.listbox):nth-of-type(2n):focus {
+.tagset ol.tags li:not(.listbox):nth-of-type(2n):hover {
   background: rgba(164, 164, 164, .6);
 }
