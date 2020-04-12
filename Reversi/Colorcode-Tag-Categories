@@ -1,0 +1,87 @@
+/* When creating this skin add Reversi as a Parent skin (under Advanced settings).
+This skin:
+1) changes the background color of tags depending on their category (warning, relationship, freeform, etc.) to make it easier to distinguish between them at a glance
+2) removes the underlines and commas which separate tags, instead identifying the start of each tag with a brighter strip of background. This helps clarify where tags start, especially for ones which wrap onto multiple lines.
+
+If you would like to restrict this skin's effects to just challenge requests, add this class before each .blurb (with a space in between them):
+.challenge_requests-index 
+*/
+
+.blurb .tags:not(.meta),
+.blurb h5.fandoms {
+  font-size: 5%;
+}
+
+.blurb .tags:not(.meta) li,
+.blurb h5.fandoms a {
+  font-size: 2000%;
+  line-height: 160%;
+}
+
+.blurb .tags:not(.meta) li::after {
+  content: "";
+}
+
+.blurb .tags:not(.meta) .tag,
+.blurb h5.fandoms a {
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: none;
+  border-left: .3em solid rgba(255,255,255, 0.2);
+  box-shadow: -6px 0px 6px -4px rgba(255,255,255, 0.2);
+  border-radius: 2px 1px 1px 2px
+  padding-left: 1px;
+  padding-right: 3px;
+  margin-right: 0.2em;
+  box-sizing: border-box;
+}
+
+.blurb .tags:not(.meta) .tag:hover,
+.blurb .tags:not(.meta) .tag:focus,
+.blurb .tags:not(.meta) .tag:active,
+.blurb h5.fandoms a:hover,
+.blurb h5.fandoms a:focus,
+.blurb h5.fandoms a:active {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.blurb h5.fandoms a {
+  margin-right: 0.4em !important;
+}
+
+.blurb .tags:not(.meta) .warnings strong {
+  font-weight: normal;
+}
+
+.blurb .tags:not(.meta) .warnings .tag {
+  background: rgba(193, 62, 62, .4);
+  border-left-color: rgba(193, 62, 62, .6);
+  box-shadow: -6px 0px 6px -4px rgba(193, 62, 62, .6);
+}
+
+.blurb .tags:not(.meta) .warnings .tag:hover,
+.blurb .tags:not(.meta) .warnings .tag:focus {
+  background: rgba(193, 62, 62, .6);
+}
+
+.blurb .tags:not(.meta) .relationships .tag {
+  background: rgba(55, 200, 200, 0.2);
+  border-left-color: rgba(55, 200, 200, 0.35);
+  box-shadow: -6px 0px 6px -4px rgba(55, 200, 200, 0.35);
+}
+
+.blurb .tags:not(.meta) .relationships .tag:hover,
+.blurb .tags:not(.meta) .relationships .tag:focus {
+  background: rgba(55, 200, 200, 0.35);
+}
+
+.blurb .tags:not(.meta) .characters .tag {
+  background: rgba(190, 190, 65, 0.2);
+  border-left-color: rgba(190, 190, 65, 0.35);
+  box-shadow: -6px 0px 6px -4px rgba(190, 190, 65, 0.35);
+}
+
+.blurb .tags:not(.meta) .characters .tag:hover,
+.blurb .tags:not(.meta) .characters .tag:focus {
+  background: rgba(190, 190, 65, 0.35);
+}
