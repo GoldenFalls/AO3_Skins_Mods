@@ -1,0 +1,12 @@
+/* In the filters sidebar, gives the Include section a green background and the Exclude section a purple background.
+It's only partly opaque, so should work for both normal and Reversi skins. */
+
+.filters .include.tags.group {
+  background: rgba(109,204,130,.14);
+  box-shadow: 0 0 8px 5px rgba(109,204,130,.14);
+}
+
+.filters .exclude.tags.group {
+  background: rgba(158,133,186,.15);
+  box-shadow: 0 0 8px 5px rgba(158,133,186,.15);
+}
