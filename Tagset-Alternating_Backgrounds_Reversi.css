@@ -7,25 +7,31 @@ Or, if you want to use other skins in addition to this one, just create a new sk
 }
 
 .tagset ol.tags.commas li:not(.listbox) {
-  background: rgba(232,232,232,.3);
-  border-bottom: none;
+  background: rgba(232,232,232,.08);
   padding-left: 3px;
   padding-right: 3px;
   margin-right: .1em;
   border-radius: 1px;
   line-height: 1.5em;
   box-sizing: border-box;
+  /* OPTIONAL: each tag gets its own line */
+  display: block;
 }
 
 .tagset ol.tags li:not(.listbox):nth-of-type(2n) {
-  background: rgba(180,180,180,.2);
+  background: rgba(180,180,180,.25);
 }
 
-.tagset ol.tags li:not(.listbox):hover, .tagset ol.tags li:not(.listbox):focus {
-  background: rgba(214,214,214,.2);
-  color: #db1be8;
+
+/* OPTIONAL: hover state
+Tags in tagsets are not links, so giving them a hover state is a tad deceptive.
+So only include a hover state if you think it will help you keep track of where you are when going through a large tagset.*/
+
+.tagset ol.tags li:not(.listbox):hover {
+  background: rgba(214,214,214,.03);
+  color: #d030fd;
 }
 
-.tagset ol.tags li:not(.listbox):nth-of-type(2n):hover, .tagset ol.tags li:not(.listbox):nth-of-type(2n):focus {
+.tagset ol.tags li:not(.listbox):nth-of-type(2n):hover {
   background: rgba(164,164,164,.1);
 }
