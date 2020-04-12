@@ -10,8 +10,8 @@
   border-radius: 1px;
   line-height: 1.5em;
   box-sizing: border-box;
-  /* OPTIONAL: each tag gets its own line */
-  display: block;
+  display: block; /* OPTIONAL: each tag gets its own line */
+  font-weight: normal; /* OPTIONAL: un-bold warning tags in tagsets */
 }
 
 .tagset ol.tags li:not(.listbox):nth-of-type(2n) {
