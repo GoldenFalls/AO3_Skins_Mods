@@ -1,0 +1,4 @@
+/* Any images in works will not exceed their container, so images in the body of a work won't go larger than the normal width of the text and images in notes will be as small as the width of the notes sections */
+.userstuff img {
+  max-width: 100%;
+}
