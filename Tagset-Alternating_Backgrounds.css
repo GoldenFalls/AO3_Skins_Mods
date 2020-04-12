@@ -10,8 +10,12 @@
   border-radius: 1px;
   line-height: 1.5em;
   box-sizing: border-box;
-  display: block; /* OPTIONAL: each tag gets its own line */
-  font-weight: normal; /* OPTIONAL: un-bold warning tags in tagsets */
+  /* OPTIONAL: un-bold warning tags in tagsets
+  font-weight: normal; */
+  /* OPTIONAL: each tag gets its own line
+  display: block;
+  margin-top: 0px;
+  margin-bottom: .3em; */
 }
 
 .tagset ol.tags li:not(.listbox):nth-of-type(2n) {
@@ -21,7 +25,7 @@
 
 /* OPTIONAL: hover state
 Tags in tagsets are not links, so giving them a hover state is a tad deceptive.
-So only include a hover state if you think it will help you keep track of where you are when going through a large tagset.*/
+So only include a hover state if you think it will help you keep track of where you are when going through a large tagset.
 
 .tagset ol.tags li:not(.listbox):hover {
   background: rgba(214, 214, 214, .6);
@@ -30,4 +34,4 @@ So only include a hover state if you think it will help you keep track of where 
 
 .tagset ol.tags li:not(.listbox):nth-of-type(2n):hover {
   background: rgba(164, 164, 164, .6);
-}
+} */
