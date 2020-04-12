@@ -24,14 +24,15 @@ If you would like to restrict this skin's effects to just challenge requests, ad
 
 .blurb .tags:not(.meta) .tag,
 .blurb h5.fandoms a {
-  background: rgba(255, 255, 255, 0.1);
   border-bottom: none;
+  background: rgba(255, 255, 255, 0.1);
+  text-shadow: 0px 0px 2px #333;
   border-left: .3em solid rgba(255,255,255, 0.2);
   box-shadow: -6px 0px 6px -4px rgba(255,255,255, 0.2);
-  border-radius: 2px 1px 1px 2px
-  padding-left: 1px;
+  border-radius: 2px 1px 1px 2px;
+  padding-left: 2px;
   padding-right: 3px;
-  margin-right: 0.2em;
+  margin-right: 1px;
   box-sizing: border-box;
 }
 
@@ -54,34 +55,42 @@ If you would like to restrict this skin's effects to just challenge requests, ad
 }
 
 .blurb .tags:not(.meta) .warnings .tag {
-  background: rgba(193, 62, 62, .4);
-  border-left-color: rgba(193, 62, 62, .6);
-  box-shadow: -6px 0px 6px -4px rgba(193, 62, 62, .6);
+  background: rgba(193, 62, 62, 0.4);
+  border-left-color: rgba(193, 62, 62, 0.6);
+  box-shadow: -6px 0px 6px -4px rgba(193, 62, 62, 0.6);
 }
 
 .blurb .tags:not(.meta) .warnings .tag:hover,
 .blurb .tags:not(.meta) .warnings .tag:focus {
-  background: rgba(193, 62, 62, .6);
+  background: rgba(193, 62, 62, 0.6);
 }
 
 .blurb .tags:not(.meta) .relationships .tag {
-  background: rgba(55, 200, 200, 0.2);
-  border-left-color: rgba(55, 200, 200, 0.35);
-  box-shadow: -6px 0px 6px -4px rgba(55, 200, 200, 0.35);
+  background: rgba(0, 255, 255, 0.2);
+  border-left-color: rgba(0, 255, 255, 0.3);
+  box-shadow: -6px 0px 6px -4px rgba(0, 255, 255, 0.3);
 }
 
 .blurb .tags:not(.meta) .relationships .tag:hover,
 .blurb .tags:not(.meta) .relationships .tag:focus {
-  background: rgba(55, 200, 200, 0.35);
+  background: rgba(0, 255, 255, 0.3);
 }
 
 .blurb .tags:not(.meta) .characters .tag {
-  background: rgba(190, 190, 65, 0.2);
-  border-left-color: rgba(190, 190, 65, 0.35);
-  box-shadow: -6px 0px 6px -4px rgba(190, 190, 65, 0.35);
+  background: rgba(191, 255, 0,.2);
+  border-left-color: rgba(191, 255, 0, 0.3);
+  box-shadow: -6px 0px 6px -4px rgba(191, 255, 0, 0.3);
 }
 
 .blurb .tags:not(.meta) .characters .tag:hover,
 .blurb .tags:not(.meta) .characters .tag:focus {
-  background: rgba(190, 190, 65, 0.35);
+  background: rgba(191, 255, 0, 0.3);
+}
+
+.blurb .tags:not(.meta) a.tag:visited {
+  color: #cccccc;
+}
+
+.blurb .tags:not(.meta) a.tag:hover:visited {
+  color: #e6e6e6;
 }
