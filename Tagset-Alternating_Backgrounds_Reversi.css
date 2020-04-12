@@ -1,0 +1,31 @@
+/* This is the Reversi version (aka dark mode), meant to be paired with the Reversi public skin.
+To use this skin, add Reversi as a parent skin and then use this skin.
+Or, if you want to use other skins in addition to this one, just create a new skin and add this skin, Reversi, and the other skins you want to use as parents of the skin. */
+
+.tagset ol.tags li:not(listbox)::after {
+  content: "";
+}
+
+.tagset ol.tags.commas li:not(.listbox) {
+  background: rgba(232,232,232,.3);
+  border-bottom: none;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-right: .1em;
+  border-radius: 1px;
+  line-height: 1.5em;
+  box-sizing: border-box;
+}
+
+.tagset ol.tags li:not(.listbox):nth-of-type(2n) {
+  background: rgba(180,180,180,.2);
+}
+
+.tagset ol.tags li:not(.listbox):hover, .tagset ol.tags li:not(.listbox):focus {
+  background: rgba(214,214,214,.2);
+  color: #db1be8;
+}
+
+.tagset ol.tags li:not(.listbox):nth-of-type(2n):hover, .tagset ol.tags li:not(.listbox):nth-of-type(2n):focus {
+  background: rgba(164,164,164,.1);
+}
