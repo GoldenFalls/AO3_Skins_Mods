@@ -24,13 +24,12 @@ If you would like to restrict this skin's effects to just challenge requests, ad
   content: "";
 }
 
-.blurb .tags:not(.meta) .warnings + .relationships,
-.blurb .tags:not(.meta) .relationships + .characters,
-.blurb .tags:not(.meta) .characters + .freeforms,
-.blurb .tags:not(.meta) .warnings + .characters,
-.blurb .tags:not(.meta) .warnings + .freeforms,
-.blurb .tags:not(.meta) .relationships + .freeforms {
-  margin-left: 1.1px;
+.blurb .tags:not(.meta) :not(.relationships) + .relationships::before,
+.blurb .tags:not(.meta) :not(.characters) + .characters::before,
+.blurb .tags:not(.meta) :not(.freeforms) + .freeforms::before {
+  content: " ";
+  font-size: 0.1%;
+  line-height: normal;
 }
 
 .blurb .tags:not(.meta) .tag,
