@@ -48,12 +48,15 @@ If you would like to restrict this skin's effects to just challenge requests, ad
 
 .blurb .tags:not(.meta) .tag:hover,
 .blurb .tags:not(.meta) .tag:focus,
-.blurb .tags:not(.meta) .tag:active,
 .blurb h5.fandoms a:hover,
-.blurb h5.fandoms a:focus,
-.blurb h5.fandoms a:active {
+.blurb h5.fandoms a:focus {
   background: rgba(255, 255, 255, 0.2);
   color: white;
+}
+
+.blurb .tags:not(.meta) .tag:active,
+.blurb h5.fandoms a:active {
+  background: rgba(255,255,255, 0.3);
 }
 
 .blurb h5.fandoms a {
@@ -75,6 +78,10 @@ If you would like to restrict this skin's effects to just challenge requests, ad
   background: rgba(193, 62, 62, 0.6);
 }
 
+.blurb .tags:not(.meta) .warnings .tag:active {
+  background: rgba(193, 62, 62, 0.8);
+}
+
 .blurb .tags:not(.meta) .relationships .tag {
   background: rgba(0, 255, 255, 0.2);
   border-left-color: rgba(0, 255, 255, 0.3);
@@ -86,8 +93,12 @@ If you would like to restrict this skin's effects to just challenge requests, ad
   background: rgba(0, 255, 255, 0.3);
 }
 
+.blurb .tags:not(.meta) .relationships .tag:active {
+  background: rgba(0, 255, 255, 0.4);
+}
+
 .blurb .tags:not(.meta) .characters .tag {
-  background: rgba(191, 255, 0, 0.2);
+  background: rgba(191, 255, 0,.2);
   border-left-color: rgba(191, 255, 0, 0.3);
   box-shadow: -6px 0px 6px -4px rgba(191, 255, 0, 0.3);
 }
@@ -95,6 +106,10 @@ If you would like to restrict this skin's effects to just challenge requests, ad
 .blurb .tags:not(.meta) .characters .tag:hover,
 .blurb .tags:not(.meta) .characters .tag:focus {
   background: rgba(191, 255, 0, 0.3);
+}
+
+.blurb .tags:not(.meta) .characters .tag:active {
+  background: rgba(191, 255, 0, 0.4);
 }
 
 .blurb .tags:not(.meta) a.tag:visited {
