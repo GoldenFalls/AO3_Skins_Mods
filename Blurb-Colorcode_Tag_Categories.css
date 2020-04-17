@@ -46,12 +46,15 @@ If you would like to restrict this skin's effects to just challenge requests, ad
 
 .blurb .tags:not(.meta) .tag:hover,
 .blurb .tags:not(.meta) .tag:focus,
-.blurb .tags:not(.meta) .tag:active,
 .blurb h5.fandoms a:hover,
-.blurb h5.fandoms a:focus,
-.blurb h5.fandoms a:active {
+.blurb h5.fandoms a:focus {
   background: #d6d6d6;
   color: black;
+}
+
+.blurb .tags:not(.meta) .tag:active,
+.blurb h5.fandoms a:active {
+  background: #BCBCBC;
 }
 
 .blurb h5.fandoms a {
@@ -73,6 +76,10 @@ If you would like to restrict this skin's effects to just challenge requests, ad
   background: #e8c9c9;
 }
 
+.blurb .tags:not(.meta) .warnings .tag:active {
+  background: #e8c0c0;
+}
+
 .blurb .tags:not(.meta) .relationships .tag {
   background: #d7f4f4;
   border-left-color: #82cccc;
@@ -84,6 +91,10 @@ If you would like to restrict this skin's effects to just challenge requests, ad
   background: #c9e8e8;
 }
 
+.blurb .tags:not(.meta) .relationships .tag:active {
+  background: #82cccc;
+}
+
 .blurb .tags:not(.meta) .characters .tag {
   background: #f4f4df;
   border-left-color: #d6d68f;
@@ -93,4 +104,8 @@ If you would like to restrict this skin's effects to just challenge requests, ad
 .blurb .tags:not(.meta) .characters .tag:hover,
 .blurb .tags:not(.meta) .characters .tag:focus {
   background: #e8e8c9;
+}
+
+.blurb .tags:not(.meta) .characters .tag:active {
+  background: #d6d68f;
 }
