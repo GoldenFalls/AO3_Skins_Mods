@@ -8,13 +8,13 @@ If you would like to restrict this skin's effects to just challenge requests, ad
 
 .blurb .tags:not(.meta),
 .blurb h5.fandoms {
-  font-size: 0.1%;
+  font-size: 5%;
   visibility: hidden;
 }
 
 .blurb .tags:not(.meta) li,
 .blurb h5.fandoms a {
-  font-size: 100000%;
+  font-size: 2000%;
   line-height: 160%;
   visibility: visible;
 }
@@ -27,7 +27,7 @@ If you would like to restrict this skin's effects to just challenge requests, ad
 .blurb .tags:not(.meta) :not(.characters) + .characters::before,
 .blurb .tags:not(.meta) :not(.freeforms) + .freeforms::before {
   content: " ";
-  font-size: 0.1%;
+  font-size: 5%;
   line-height: normal;
 }
 
