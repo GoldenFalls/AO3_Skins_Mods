@@ -1,0 +1,58 @@
+/* This is the Reversi version (aka dark mode), meant to be paired with the Reversi public skin.
+To use this skin, add Reversi as a parent skin and then use this skin.
+Or, if you want to use other skins in addition to this one, just create a new skin and add this skin, Reversi, and the other skins you want to use as parents of the skin.
+
+DESCRIPTION:
+- Alternates the color of forms from their text fields, sub fields, legends (the label at the top left), and the background of the page.
+  This is based on the default Archive skin, just modified for Reversi's color scheme.
+- Replaces the button styling on the Search text field (in the Navigation bar) with the text field styling of the Tag Search page.
+  Subtly changes the bottom border color and the spacing of its margins to distinguish it from the background of the navigation bar.
+  Also makes a minor improvement to how the navigation bar stacks on mobile (reduces the space between dropdown menu options and the Search section for more equal spacing).
+ */
+
+
+/* Header Search Field */
+#header #search #site_search {
+  box-shadow: inset 0 1px 2px #000;
+  background: #333;
+  border: 1px solid #222;
+  border-bottom-color: #444;
+  margin: 0.429em;
+}
+
+#header .primary a {
+  padding-bottom: 0em;
+}
+
+/* Add background color variation to forms */
+fieldset,
+form dl,
+fieldset dl dl,
+fieldset fieldset fieldset,
+fieldset fieldset dl dl,
+dd.hideme,
+form blockquote.userstuff {
+  background: #444;
+  border-color: #3b3b3b;
+}
+
+fieldset fieldset,
+fieldset dl dl,
+form blockquote.userstuff,
+input,
+textarea,
+form.verbose legend,
+.verbose form legend {
+  background: #333;
+}
+
+input,
+textarea {
+  box-shadow: inset 0 1px 2px #111;
+}
+
+form.verbose legend,
+.verbose form legend {
+  border-color: #444;
+  box-shadow: 1px 2px 3px #333;
+}
