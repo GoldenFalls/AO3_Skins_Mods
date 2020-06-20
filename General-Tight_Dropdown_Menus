@@ -1,0 +1,12 @@
+/* This skin reduces the width of the header dropdown menus to the width of their content.
+Mainly useful for mobile, since it means the user dropdown is no longer partway off the screen.
+However, the reduced size for the main navigation menus can be annoying, so if you want to limit it to only the user navigation dropdowns, add '.user' after '#header'
+
+Some older browsers don't support 'min-content' or only support it as 'min-intrinsic'.
+You can check support coverage here: https://caniuse.com/#search=min-content
+If you don't know what browser version you're using, it should be available somewhere in your browser's about or settings, or you can find a website which will tell you.
+*/
+
+#header .dropdown .menu {
+  width: min-content;
+}
