@@ -39,10 +39,13 @@ form blockquote.userstuff {
 fieldset fieldset,
 fieldset dl dl,
 form blockquote.userstuff,
-input,
-textarea,
 form.verbose legend,
 .verbose form legend {
+  background: #3d3d3d;
+}
+
+input,
+textarea {
   background: #333;
 }
 
