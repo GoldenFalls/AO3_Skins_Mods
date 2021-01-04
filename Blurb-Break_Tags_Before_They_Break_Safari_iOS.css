@@ -1,0 +1,5 @@
+/* Safari iOS won't allow breaking to a new line at / marks (unlike Firefox) so long relationship tags where all the characters have single-word names (so there's no spaces just slashes) can break/escape the width of the work blurb. This fixes that. */
+
+.tags li a {
+  word-break: break-word;
+}
