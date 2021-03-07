@@ -1,0 +1,69 @@
+/*
+This skin separates the tags in blurbs by type of tag (warnings, relationships, characters, and freeforms) and displays them on separate lines.
+Each tag section has the type of tags label above it.
+*/
+
+.tags {
+  padding-top: 0.5em;
+}
+
+.tags .warnings,
+.tags .relationships,
+.tags .characters,
+.tags .freeforms {
+  margin: 0em;
+}
+
+.tags :not(.relationships) + .relationships,
+.tags :not(.characters) + .characters,
+.tags :not(.freeforms) + .freeforms {
+  margin-top: 0.7em;
+}
+
+.tags .warnings:first-child::before {
+  content: "Archive Warnings: ";
+  color: #111;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.tags :not(.relationships) + .relationships::before {
+  content: "Relationships: ";
+  color: #111;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.tags :not(.characters) + .characters::before {
+  content: "Characters: ";
+  color: #111;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.tags :not(.freeforms) + .freeforms::before {
+  content: "Freeform: ";
+  color: #111;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.tags .warnings strong {
+  font-weight: normal;
+}
+
+.blurb .relationships {
+  font-style: normal;
+}
+.blurb .relationships a {
+  background: none;
+}
+
+/* If you'd like the tags to be on the same line as their label (instead of below it), delete this rule */
+.tags .warnings::before,
+.tags :not(.relationships) + .relationships::before,
+.tags :not(.characters) + .characters::before,
+.tags :not(.freeforms) + .freeforms::before {
+  display: table;
+}
