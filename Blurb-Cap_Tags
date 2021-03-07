@@ -1,0 +1,32 @@
+/*
+In blurbs, up to 30 tags are displayed.
+An "Excess tags alert!" is displayed, and after that all the tags are hidden, except for ones with your chosen keywords (the bottom section explains how to input keywords).
+If you'd like to change the number of tags displayed, replace the '30' in the first rule with your chosen number and '31' in the following rule with your number plus one (e.g. '30'-->'25', '31'-->'26'.
+*/
+
+.blurb ul.tags li:nth-of-type(30):after {
+  content: "Excess tags alert!";
+  margin-inline-start: .5em;
+  border-radius: .3em;
+  padding: 0em .2em;
+  border: .2em solid #900;
+  display: inline-block;
+}
+
+.blurb ul.tags li:nth-of-type(n+31) a,
+.blurb ul.tags li:nth-of-type(n+31)::after {
+  display: none;
+}
+
+/* This will reveal tags even if they're after the cutoff as long as they have one of your keywords in them.
+If you don't want this feature, delete the section below.
+Replace keyword with whatever keywords you still want to see the tags of (but don't get rid of the quotation marks "").
+Add more comma-separated lines for each keyword.
+Keyword tags are displayed with solid red underlines, so they're easy to notice */
+.blurb ul.tags li a[href*="keyword" i],
+.blurb ul.tags li a[href*="keyword" i] {
+  display: inline-block;
+  border-bottom: .2em solid #900;
+  border-radius: .15em;
+  line-height: revert;
+}
