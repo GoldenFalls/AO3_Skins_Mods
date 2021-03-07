@@ -1,7 +1,7 @@
 /*
 In blurbs, up to 30 tags are displayed.
 An "Excess tags alert!" is displayed, and after that all the tags are hidden, except for ones with your chosen keywords (the bottom section explains how to input keywords).
-If you'd like to change the number of tags displayed, replace the '30' in the first rule with your chosen number and '31' in the following rule with your number plus one (e.g. '30'-->'25', '31'-->'26'.
+If you'd like to change the number of tags displayed, replace the '30' in the first rule with your chosen number and '31' in the following rules with your number plus one (e.g. '30'-->'25', '31'-->'26'.
 */
 
 .blurb ul.tags li:nth-of-type(30):after {
