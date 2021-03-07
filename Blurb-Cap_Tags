@@ -18,6 +18,10 @@ If you'd like to change the number of tags displayed, replace the '30' in the fi
   display: none;
 }
 
+.blurb ul.tags li:nth-of-type(n+31) {
+  margin-inline-end: -0.25em;
+}
+
 /* This will reveal tags even if they're after the cutoff as long as they have one of your keywords in them.
 If you don't want this feature, delete the section below.
 Replace keyword with whatever keywords you still want to see the tags of (but don't get rid of the quotation marks "").
