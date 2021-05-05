@@ -1,0 +1,10 @@
+/* This bookmarklet removes excess spacing in between paragraphs on AO3.
+Check out Flamebyrd's https://random.fangirling.net/scripts/how_to_use_bookmarklets for instructions on how to make and use bookmarklets.
+
+A more HTML-oriented/detailed description of what this bookmarklet does:
+* Finds all <p> paragraph elements in a chapter where the only content is a non-breaking space
+(as opposed to a normal space, thus preventing the browser from just not displaying it or letting you target it through CSS methods),
+and then removes all the contents of that paragraph element. So now the browser ignores/collapses it!
+* Finds all the <br> line break elements in the chapter and deletes those, since sometimes works will end up with the text of paragraphs being preceded by line breaks*/
+
+javascript:%28function%28%29%7Bvar%20work%3Ddocument.getElementById%28%22chapters%22%29%3Bvar%20paragraphs%3Dwork.getElementsByTagName%28%22p%22%29%3Bvar%20breaks%3Dwork.getElementsByTagName%28%22br%22%29%3Bfor%28var%20i%3D0%3Bi%3Cparagraphs.length%3Bi%2B%2B%29%7Bif%28paragraphs%5Bi%5D.innerHTML%3D%3D%22%26nbsp%3B%22%29%7Bparagraphs%5Bi%5D.innerHTML%3D%22%22%7D%7D%3Bfor%28var%20i%3D0%3Bi%3Cbreaks.length%3Bi%2B%2B%29%7Bbreaks%5B0%5D.parentNode.removeChild%28breaks%5B0%5D%29%3B%7D%7D%29%28%29%3B
