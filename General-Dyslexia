@@ -1,0 +1,129 @@
+/* This skin is designed to help make the site easier to read without having to apply an actual dyslexia font. It creates more space in-between letters, words, lines, and paragraphs.
+I'm interested in feedback from people using it if you have anything you'd like changed! */
+
+body,
+input,
+textarea,
+button {
+  letter-spacing: 0.15ch;
+  word-spacing: 0.325ch;
+  font-variant-ligatures: none;
+  line-height: 2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading,
+select {
+  letter-spacing: .35ch;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.5;
+}
+
+#header h2 {
+  line-height: 2;
+}
+
+h4 {
+  line-height: 1.625;
+}
+
+h5 {
+  line-height: 1.786;
+}
+
+h6 {
+  line-height: 2;
+}
+
+#header .heading a {
+  line-height: 2.25;
+}
+
+#dashboard a,
+#dashboard span {
+  line-height: 2.5;
+}
+
+#main {
+  line-height: 1.786;
+}
+
+#footer a {
+  line-height: 2;
+}
+
+.autocomplete div.dropdown ul {
+  line-height: 1.786;
+}
+
+.toggled form p.footnote,
+.dynamic form p.footnote {
+  line-height: 1;
+}
+
+.heading .actions,
+.heading .action,
+.heading span.actions {
+  line-height: 1.786;
+}
+
+span.unread,
+.replied,
+span.claimed,
+.actions span.defaulted {
+  line-height: 1.786;
+}
+
+a.tag {
+  line-height: 2;
+}
+
+ul.cloud {
+  line-height: 2.5;
+}
+
+a.work {
+  line-height: 1.625;
+}
+
+.blurb dl.stats {
+  line-height: 2;
+}
+
+.bookmark span.count {
+  line-height: 2.375;
+}
+
+.bookmark .user .meta {
+  line-height: 2.5;
+}
+
+.system p {
+  line-height: 2;
+}
+
+#tos_prompt .summary {
+  line-height: 1.9;
+}
+
+.userstuff p {
+  line-height: 2;
+  margin-top: 2.5em;
+}
+
+.userstuff dd {
+  line-height: 2;
+}
+
+.announcement .thermometer .amount {
+  line-height: 1.75;
+}
