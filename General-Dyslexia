@@ -1,5 +1,6 @@
 /* This skin is designed to help make the site easier to read without having to apply an actual dyslexia font. It creates more space in-between letters, words, lines, and paragraphs.
-I'm interested in feedback from people using it if you have anything you'd like changed! */
+I'm interested in feedback from people using it if you have anything you'd like changed!
+I took inspiration from this article: https://www.smashingmagazine.com/2021/11/dyslexia-friendly-mode-website/ */
 
 body,
 input,
