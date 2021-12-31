@@ -4,7 +4,7 @@
   display: none;
 }
 
-#greeting .user > li:first-child:before {
+#greeting .user > li:first-child::before {
   content:"new text here";
   padding: 0.25em 0.75em;
   display: inline-block;
