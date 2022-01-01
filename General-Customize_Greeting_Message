@@ -1,4 +1,4 @@
-*/ This skin allows you to replace the "Hi, $Username!" text with whatever text you want. For example, you could replace it with just your username for a cleaner look. */
+/* This skin allows you to replace the "Hi, $Username!" text with whatever text you want. For example, you could replace it with just your username for a cleaner look. */
 
 #greeting .user > li:first-child > a {
   display: none;
