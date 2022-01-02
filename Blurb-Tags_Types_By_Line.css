@@ -56,9 +56,17 @@ Each tag section has the type of tags label above it.
 .blurb .relationships {
   font-style: normal;
 }
+
 .blurb .relationships a {
   background: none;
 }
+
+.blurb .relationships a.tag:hover,
+.blurb .relationships a.tag:visited:hover {
+  background: #900;
+  color: #fff;
+}
+
 
 /* If you'd like the tags to be on the same line as their label (instead of below it), delete this rule */
 .tags .warnings::before,
