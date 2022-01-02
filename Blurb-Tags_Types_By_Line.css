@@ -14,6 +14,13 @@ Each tag section has the type of tags label above it.
   margin: 0em;
 }
 
+.tags .warnings::before,
+.tags :not(.relationships) + .relationships::before,
+.tags :not(.characters) + .characters::before,
+.tags :not(.freeforms) + .freeforms::before {
+  display: table;
+}
+
 .tags :not(.relationships) + .relationships,
 .tags :not(.characters) + .characters,
 .tags :not(.freeforms) + .freeforms {
@@ -65,13 +72,4 @@ Each tag section has the type of tags label above it.
 .blurb .relationships a.tag:visited:hover {
   background: #900;
   color: #fff;
-}
-
-
-/* If you'd like the tags to be on the same line as their label (instead of below it), delete this rule */
-.tags .warnings::before,
-.tags :not(.relationships) + .relationships::before,
-.tags :not(.characters) + .characters::before,
-.tags :not(.freeforms) + .freeforms::before {
-  display: table;
 }
