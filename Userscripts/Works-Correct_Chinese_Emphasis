@@ -1,0 +1,21 @@
+// ==UserScript==
+// @name         Correct Chinese Emphasis
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://archiveofourown.org/*
+// @run-at       document-idle
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    var lang=document.getElementsByClassName("work meta group").getElementsByClassName("language")[1].textContent;
+    var work=document.getElementById("workskin");
+    var em=work.getElementsByTagName("em");
+    if (lang.includes("中文") == true) {
+        work.setAttribute("lang","zh");
+        em.setAttribute("font-style", "normal");
+        em.setAttribute("text-emphasis", "dot");
+    };
+})();
