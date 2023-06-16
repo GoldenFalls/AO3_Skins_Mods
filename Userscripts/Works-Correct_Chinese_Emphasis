@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 (function() {
-    var lang=document.getElementsByClassName("work meta group").getElementsByClassName("language")[1].textContent;
+    var lang=document.getElementsByClassName("language")[1].textContent;
     var work=document.getElementById("workskin");
     var em=work.getElementsByTagName("em");
     if (lang.includes("中文") == true) {
