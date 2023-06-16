@@ -10,12 +10,13 @@
 // ==/UserScript==
 
 (function() {
-    var lang=document.getElementsByClassName("language")[1].textContent;
-    var work=document.getElementById("workskin");
-    var em=work.getElementsByTagName("em");
+    const lang=document.querySelector("dd.language").textContent;
+    const work=document.getElementById("workskin");
+    const em=work.getElementsByTagName("em");
     if (lang.includes("中文") == true) {
         work.setAttribute("lang","zh"); // the general "zh" is used instead of identifying individual languages because best practices says only get specific when there's a necessary distinction. I may change it to specify later, since they are identified separately on AO3
-        em.setAttribute("font-style", "normal");
-        em.setAttribute("text-emphasis", "dot");
+        for (const element of em) {
+            element.setAttribute("style","font-style: normal; text-emphasis: dot");
+        };
     };
 })();
