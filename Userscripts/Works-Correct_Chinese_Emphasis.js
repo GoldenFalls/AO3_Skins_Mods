@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  adds language attribute to works posted in Chinese, as well as corrects the <em> sections from italics to dotted.
-// @author       You
+// @author       GoldenFalls, with help from Amy :)
 // @match        https://archiveofourown.org/*
 // @run-at       document-idle
 // @grant        none
